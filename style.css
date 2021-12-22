@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+
+body {
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: start;
+}
+
+.container {
+    width: 50%;
+    height: 600px;
+}
+
+/* First animation */
+.box1 p {
+    display: block;
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.jack {
+    opacity: 0;
+    transition: all 4s ease-in 1s;
+    width: 70%;
+}
+
+.jack img {
+    display: block;
+    width: 300px; 
+    height: 300px;
+    margin: 100px auto;
+    margin-bottom: 50px;
+    transition: all 8s ease-in 1s;
+}
+
+.jack p {
+    display: block;
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+}
+
+.jack:hover {
+    opacity: 1;
+}
+
+.jack:hover img {
+    transform: rotate(360deg);
+}
+
+/* Second animation */
+
+.bounce {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.box2 .ball {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    animation: bouncy 0.4s alternate infinite;
+}
+
+@keyframes bouncy {
+    0% {
+            top: 0px;
+    }
+
+    10% {
+            top: 40px;
+    }
+
+    20% {
+            top: 80px;
+    }
+
+    30% {
+            top: 120px;
+    }
+
+    40% {
+            top: 160px;
+    }
+
+    50% {
+            top: 220px;
+    }
+    60% {
+            top: 260px;
+    }
+
+    70% {
+            top: 300px;
+    }
+
+    80% {
+            top: 340px;
+    }
+
+    90% {
+            top: 380px;
+    }
+
+    100% {
+            top: 410px;
+    }
+}
